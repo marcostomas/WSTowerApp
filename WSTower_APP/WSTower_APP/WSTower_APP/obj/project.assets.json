@@ -349,11 +349,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\senai\\Desktop\\WSTower_APP\\WSTower_APP\\WSTower_APP\\WSTower_APP.csproj",
+      "projectUniqueName": "C:\\Users\\senai\\Desktop\\WSTowerApp\\WSTower_APP\\WSTower_APP\\WSTower_APP\\WSTower_APP.csproj",
       "projectName": "WSTower_APP",
-      "projectPath": "C:\\Users\\senai\\Desktop\\WSTower_APP\\WSTower_APP\\WSTower_APP\\WSTower_APP.csproj",
+      "projectPath": "C:\\Users\\senai\\Desktop\\WSTowerApp\\WSTower_APP\\WSTower_APP\\WSTower_APP\\WSTower_APP.csproj",
       "packagesPath": "C:\\Users\\senai\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\senai\\Desktop\\WSTower_APP\\WSTower_APP\\WSTower_APP\\obj\\",
+      "outputPath": "C:\\Users\\senai\\Desktop\\WSTowerApp\\WSTower_APP\\WSTower_APP\\WSTower_APP\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

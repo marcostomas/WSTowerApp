@@ -12,42 +12,39 @@
                 HorizontalOptions="Center"
                 VerticalOptions="Center"
             />
-            
+
             <Label Text="O maior realizador de eventos do Brasil!"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
 
-            <StackLayout 
-                HorizontalOptions="CenterAndExpand"
-                VerticalOptions="End"
-             >
-                <Label Text="Realização" FontSize="Large" FontAttributes="Italic"
-           HorizontalOptions="Start"
-                       VerticalOptions="End"
-           />   
-                <Image
-                Source="WSTowers.png"
-                WidthRequest = "100"
-                HeightRequest="100"
-                HorizontalOptions="Start"
-                    VerticalOptions="End"
-            />
-                
-            </StackLayout>
+            <StackLayout Orientation="Horizontal"
+                         Margin="20">
+                <StackLayout 
+                        HorizontalOptions="Start"
+                        Margin="20"
+                     >
+                    <Label Text="Realização" FontSize="Large" FontAttributes="Italic"
+                     />
+                    <Image
+                        Source="WSTowers.png"
+                        WidthRequest = "100"
+                        HeightRequest="100"
+                            VerticalOptions="Start"
+                     />
+                </StackLayout>
 
-            <StackLayout 
-                HorizontalOptions="CenterAndExpand">
-                <Label Text="Apoio" FontSize="Large" FontAttributes="Italic"
-                HorizontalOptions="Center"
-                VerticalOptions="End"
-            />
-                <Image
-                Source="unnamed.png"
-                WidthRequest = "100"
-                HeightRequest="100"
-                HorizontalOptions="End"  
-            />
-
+                <StackLayout
+                        HorizontalOptions="End"
+                        Margin="10">
+                    <Label Text="Apoio" FontSize="Large" FontAttributes="Italic"
+                     />
+                    <Image
+                        Source="unnamed.png"
+                        WidthRequest = "100"
+                        HeightRequest="100"
+                        VerticalOptions="Start"
+                     />
+                </StackLayout>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
