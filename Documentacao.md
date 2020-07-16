@@ -6,14 +6,14 @@ Aplicativo da Empresa WsTower, onde é possível logar com uma conta, visualizar
 
 ## Desenvolvimento
 
-**Tecnologias Utilizadas**
+### Tecnologias Utilizadas
 * Xamarin;
 * SQL;
 * Figma;
 * Visual Studio;
 * Android Studio/Celular Android.
 
-**Planejamento de Desenvolvimento**
+### Planejamento de Desenvolvimento
 * Definição de layout;
 * Criação do projeto;
 * Criação das telas;
@@ -22,9 +22,9 @@ Aplicativo da Empresa WsTower, onde é possível logar com uma conta, visualizar
 * Conectar API com o App;
 * Depurar.
 
-**Cronograma**
-    * 1ª Semana: Layout + Navegabilidade;
-    * 2ª Semana: API + Banco de dados + Conexão API + App.
+### Cronograma
+* 1ª Semana: Layout + Navegabilidade;
+* 2ª Semana: API + Banco de dados + Conexão API + App.
 
 ## Guia de Estilos
 
@@ -39,7 +39,7 @@ Aplicativo da Empresa WsTower, onde é possível logar com uma conta, visualizar
 
 ## Funcionalidades
 
-**Requisitos Mínimos**
+### Requisitos Mínimos
 
 * Splash: Texto, Logo, Animação;
 * Login: Usuário, Senha, API e Validação;
