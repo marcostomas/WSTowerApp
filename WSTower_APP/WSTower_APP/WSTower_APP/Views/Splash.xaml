@@ -1,0 +1,54 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="WSTower_APP.Views.Splash">
+    <ContentPage.Content>
+        <StackLayout>
+
+            <Image
+                Source="unknown.png"
+                WidthRequest = "200"
+                HeightRequest="200"
+                HorizontalOptions="Center"
+                VerticalOptions="Center"
+            />
+            
+            <Label Text="O maior realizador de eventos do Brasil!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+
+            <StackLayout 
+                HorizontalOptions="CenterAndExpand"
+                VerticalOptions="End"
+             >
+                <Label Text="Realização" FontSize="Large" FontAttributes="Italic"
+           HorizontalOptions="Start"
+                       VerticalOptions="End"
+           />   
+                <Image
+                Source="WSTowers.png"
+                WidthRequest = "100"
+                HeightRequest="100"
+                HorizontalOptions="Start"
+                    VerticalOptions="End"
+            />
+                
+            </StackLayout>
+
+            <StackLayout 
+                HorizontalOptions="CenterAndExpand">
+                <Label Text="Apoio" FontSize="Large" FontAttributes="Italic"
+                HorizontalOptions="Center"
+                VerticalOptions="End"
+            />
+                <Image
+                Source="unnamed.png"
+                WidthRequest = "100"
+                HeightRequest="100"
+                HorizontalOptions="End"  
+            />
+
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
