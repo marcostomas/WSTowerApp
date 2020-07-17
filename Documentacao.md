@@ -2,7 +2,7 @@
 
 ## Objetivo
 
-Aplicação mobile para a empresa Ws Tower, o aplicativo tem como principal função listar/mostrar os eventos que acontecerão dentro dos estádios gerenciados pela empresa. Além da visualização o usuário vai ter a opção de favoritar seus eventos de interesse.
+Aplicação mobile para a empresa Ws Tower, o aplicativo tem como principal função listar/mostrar os eventos que acontecerão dentro dos estádios gerenciados pela empresa. Além da visualização, o usuário vai ter a opção de favoritar seus eventos de interesse.
 
 ## Desenvolvimento
 
@@ -19,15 +19,15 @@ Aplicação mobile para a empresa Ws Tower, o aplicativo tem como principal fun�
 - Figma.
 
 ### Planejamento de Desenvolvimento
--Definir Regra de Negócios;
--Criar Banco de Dados;
--Criar Web API + Banco de Dados;
--Testar API;
--Definir/Criar Interface do Usuário para o Aplicativo;
--Promover a Navegabilidade entre as páginas;
--Definir animações;
--Conectar API com o APP;
--Testar;
+- Definir Regra de Negócios;
+- Criar Banco de Dados;
+- Criar Web API + Banco de Dados;
+- Testar API;
+- Definir/Criar Interface do Usuário para o Aplicativo;
+- Promover a Navegabilidade entre as páginas;
+- Definir animações;
+- Conectar API com o APP;
+- Testar.
 
 ### Cronograma
 Veja o [cronograma](./Cronograma_Grupo-9.xlsx "Cronograma do grupo 9 em .xlsx")
@@ -36,11 +36,11 @@ Veja o [cronograma](./Cronograma_Grupo-9.xlsx "Cronograma do grupo 9 em .xlsx")
 
 - Paleta de Cores:
     ```css
-        ```Verde - ``#2fcb71
-        ``Azul - ``#2881b9
-        ``Cinzento - ``#818181
-        ``Preto - ``Black
-        ``Branco - ``White
+        Verde - #2fcb71
+        Azul - #2881b9
+        Cinzento - #818181
+        Preto - Black
+        Branco - White
     ```
 - Fontes:
     [Exo](https://fonts.google.com/specimen/Exo "Fonte Exo no Google Fonts")

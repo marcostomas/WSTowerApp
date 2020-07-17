@@ -2,7 +2,7 @@
 **Aplicativo móvel feito em Xamarin**
 
 Aplicação sob desenvolvimento.
-Veja a [documentação](./Documentacao.md "Documentação em .docx"). Veja o [cronograma](./Cronograma-Grupo-9.xlsx "Cronograma do grupo 9 em .xlsx")
+Veja a [documentação](./Documentacao.md "Documentação em .docx"). Veja o [cronograma](./Cronograma_Grupo-9.xlsx "Cronograma do grupo 9 em .xlsx")
 
 
 ## Colaboradores
