@@ -1,0 +1,15 @@
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\WSTowerApp.csprojAssemblyReference.cache
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\App.xaml.g.cs
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\MainPage.xaml.g.cs
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\Splash.xaml.g.cs
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\WSTowerApp.AssemblyInfoInputs.cache
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\WSTowerApp.AssemblyInfo.cs
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\WSTowerApp.csproj.CoreCompileInputs.cache
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\bin\Debug\netstandard2.0\WSTowerApp.deps.json
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\bin\Debug\netstandard2.0\WSTowerApp.dll
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\bin\Debug\netstandard2.0\ref\WSTowerApp.dll
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\bin\Debug\netstandard2.0\WSTowerApp.pdb
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\XamlC.stamp
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\WSTowerApp.dll
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\ref\WSTowerApp.dll
+C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\WSTowerApp.pdb
