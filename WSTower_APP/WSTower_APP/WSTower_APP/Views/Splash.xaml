@@ -1,51 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:WSTower_APP"
              x:Class="WSTower_APP.Views.Splash">
     <ContentPage.Content>
-        <StackLayout>
+        <StackLayout
+            HorizontalOptions="Center"
+            VerticalOptions="Start">
 
             <Image
-                Source="unknown.png"
-                WidthRequest = "200"
-                HeightRequest="200"
-                HorizontalOptions="Center"
-                VerticalOptions="Center"
+                Source="{local:ImageResource WSTower_App.Resources.WSTower-logo.png}"
             />
-
-            <Label Text="O maior realizador de eventos do Brasil!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-
-            <StackLayout Orientation="Horizontal"
-                         Margin="20">
-                <StackLayout 
-                        HorizontalOptions="Start"
-                        Margin="20"
-                     >
-                    <Label Text="Realização" FontSize="Large" FontAttributes="Italic"
-                     />
-                    <Image
-                        Source="WSTowers.png"
-                        WidthRequest = "100"
-                        HeightRequest="100"
-                            VerticalOptions="Start"
-                     />
-                </StackLayout>
-
-                <StackLayout
-                        HorizontalOptions="End"
-                        Margin="10">
-                    <Label Text="Apoio" FontSize="Large" FontAttributes="Italic"
-                     />
-                    <Image
-                        Source="unnamed.png"
-                        WidthRequest = "100"
-                        HeightRequest="100"
-                        VerticalOptions="Start"
-                     />
-                </StackLayout>
-            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

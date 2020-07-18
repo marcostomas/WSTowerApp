@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace WSTower_APP.Views
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Splash : ContentPage
-	{
-		public Splash ()
-		{
-			InitializeComponent ();
-		}
-	}
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Splash : ContentPage
+    {
+        public Splash()
+        {
+            InitializeComponent();
+        }
+    }
 }
