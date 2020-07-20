@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="WSTowerApp.Views.Perfil"
+             Title="Perfil">
+    <ContentPage.Content>
+        <StackLayout>
+            <Label Text="Perfil"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+            <Button Text="Meus Eventos"
+                    Style ="{StaticResource btnPadrao}"
+                    Clicked="OnClicked_MeusEventosPerfil"/>
+            <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
+                <Button Text="Editar" Clicked="OnClicked_EditarPerfil"/>
+                <Button Text="Excluir"/>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
