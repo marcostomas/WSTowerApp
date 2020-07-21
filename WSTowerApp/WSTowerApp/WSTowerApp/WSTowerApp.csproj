@@ -11,11 +11,26 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resource\agenda.png" />
+    <None Remove="Resource\agenda3.jpg" />
+    <None Remove="Resource\bonecoTemporario.png" />
+    <None Remove="Resource\calendario.jpg" />
+    <None Remove="Resource\carinhaTriste.png" />
+    <None Remove="Resource\fonts 1.png" />
+    <None Remove="Resource\user.png" />
+    <None Remove="Resource\user.svg" />
     <None Remove="Resource\WSTower-logo.png" />
+    <None Remove="Resource\WSTower-marca.png" />
+    <None Remove="Resource\WSTower-Senai-marca.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Resource\agenda3.jpg" />
+    <EmbeddedResource Include="Resource\carinhaTriste.png" />
+    <EmbeddedResource Include="Resource\user.png" />
     <EmbeddedResource Include="Resource\WSTower-logo.png" />
+    <EmbeddedResource Include="Resource\WSTower-marca.png" />
+    <EmbeddedResource Include="Resource\WSTower-Senai-marca.png" />
   </ItemGroup>
 
   <ItemGroup>
@@ -24,13 +39,28 @@
   </ItemGroup>
 
   <ItemGroup>
+    <EmbeddedResource Update="Views\Alterar.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\AlterarOK.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
     <EmbeddedResource Update="Views\Cadastro.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\CadastroOK.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\EditarPerfil.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Eventos.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\Excluir.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+    <EmbeddedResource Update="Views\ExcluirOK.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="Views\Login.xaml">

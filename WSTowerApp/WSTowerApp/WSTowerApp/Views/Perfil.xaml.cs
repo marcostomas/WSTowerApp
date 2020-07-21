@@ -19,7 +19,7 @@ namespace WSTowerApp.Views
 
         private void OnClicked_MeusEventosPerfil(object sender, EventArgs e)
         {
-            //Navigation.PushAsync(new Eventos());
+            Navigation.PushAsync(new Eventos());
         }
 
         async void OnClicked_EditarPerfil(object sender, EventArgs e)

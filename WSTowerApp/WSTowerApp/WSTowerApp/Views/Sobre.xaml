@@ -4,13 +4,52 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:local="clr-namespace:WSTowerApp"
              x:Class="WSTowerApp.Views.Sobre"
              Title="Sobre">
     <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Sobre"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+        <StackLayout Margin="45,50,45,0">
+            <StackLayout>
+                <Image 
+                    Source="{local:ImageResource WSTowerApp.Resource.WSTower-marca.png}"
+                    WidthRequest="270"
+                    HeightRequest="40"/>
+            </StackLayout>
+
+            <StackLayout Margin="0,36,0,0">
+                <Label 
+                    Text="Sobre o aplicativo" 
+                    HorizontalOptions="Center"
+                    Style="{StaticResource lbTextos}"
+                    FontSize="Title"/>
+            </StackLayout>
+
+            <StackLayout Margin="0,30,0,0">
+                <!--Fazer o texto ficar justificado-->
+                <Label 
+                    Text="WS Tower foi um projeto do curso Téc. de Desenvolvimento de Sistemas, no SENAI Informática, feito pelos alunos: André Akira, Douglas Mantovani, Marcos Tomás e Thiago Silva, no 1º semestre de 2020 para o 2º termo do curso." 
+                    HorizontalOptions="CenterAndExpand"
+                    VerticalOptions="CenterAndExpand"
+                    Style="{StaticResource lbTextos}"
+                    HorizontalTextAlignment="Center"
+                    VerticalTextAlignment="Center"/>
+            </StackLayout>
+
+            <StackLayout Margin="0,36,0,0">
+                <Image 
+                    Source="{local:ImageResource WSTowerApp.Resource.WSTower-Senai-marca.png}"
+                    WidthRequest="139"
+                    HeightRequest="36"/>
+            </StackLayout>
+
+            <StackLayout Margin="0,48,0,0">
+                <!--Adicionar clicked no botão e, consequentemente, o método em Sobre.xaml.cs-->
+                <Button
+                    Text="Voltar"
+                    Style="{StaticResource btnPadrao}"
+                    BackgroundColor="{StaticResource azul}"
+                    FontAttributes="Bold"/>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

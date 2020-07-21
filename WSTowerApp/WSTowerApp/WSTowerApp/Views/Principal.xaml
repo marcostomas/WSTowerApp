@@ -4,11 +4,61 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
+             xmlns:local="clr-namespace:WSTowerApp"
              x:Class="WSTowerApp.Views.Principal"
              Title="Principal">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Sou a Página Principal" HorizontalOptions="CenterAndExpand" />
+            <StackLayout Orientation="Horizontal" Margin="31,29,0,0">
+                <Label
+                    Text="Bem-vindo,"
+                    FontSize="Medium"
+                    Style="{StaticResource lbTextos}"
+                    FontAttributes="Bold"/>
+
+                <Label
+                    Text="Visitante"
+                    FontSize="Medium"
+                    TextColor="{StaticResource azul}"
+                    FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Margin="45,57,45,0">
+                <Image 
+                    Source="{local:ImageResource WSTowerApp.Resource.WSTower-marca.png}"
+                    WidthRequest="270"
+                    HeightRequest="40"/>
+            </StackLayout>
+
+            <StackLayout Margin="34,82,34,0" Orientation="Horizontal">
+                <Image
+                    Source="{local:ImageResource WSTowerApp.Resource.agenda3.jpg}"
+                    WidthRequest="21"
+                    HeightRequest="16"/>
+                
+                <Label
+                    Text="AGENDA COMPLETA"
+                    Style="{StaticResource lbTextos}"
+                    FontSize="Large"/>
+
+            </StackLayout>
+
+            <StackLayout>
+                <Grid>
+                    <ListView>
+                        <ListView.ItemsSource>
+                            <x:Array Type="{x:Type x:String}">
+                                <x:String>Teste 1</x:String>
+                                <x:String>Teste 2</x:String>
+                                <x:String>Teste 3</x:String>
+                                <x:String>Teste 4</x:String>
+                                <x:String>Teste 5</x:String>
+                                <x:String>Teste 6</x:String>
+                            </x:Array>
+                        </ListView.ItemsSource>
+                    </ListView>
+                </Grid>
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

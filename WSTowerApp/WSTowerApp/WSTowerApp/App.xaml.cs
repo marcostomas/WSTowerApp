@@ -11,7 +11,7 @@ namespace WSTowerApp
         {
             InitializeComponent();
 
-            MainPage = new Splash();
+            MainPage = new Login();
         }
 
         protected override void OnStart()

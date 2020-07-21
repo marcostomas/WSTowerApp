@@ -11,7 +11,6 @@
         <StackLayout
             HorizontalOptions="Center"
             VerticalOptions="Center">
-            <!--TODO: Verificar tamanho final da imagem-->
             <Image 
                 Source="{local:ImageResource WSTowerApp.Resource.WSTower-logo.png}"
                 WidthRequest="190"

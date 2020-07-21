@@ -1,24 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {}
+    "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {
+    "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
+        "projectUniqueName": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
         "projectName": "WSTowerApp",
-        "projectPath": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
-        "packagesPath": "C:\\Users\\thi_s\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\obj\\",
+        "projectPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
+        "packagesPath": "C:\\Users\\marcos\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\thi_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\marcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -68,7 +67,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
         }
       }
     }
