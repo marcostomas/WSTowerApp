@@ -1,0 +1,76 @@
+CREATE DATABASE WSTower;
+
+USE WSTower;
+
+CREATE TABLE TipoUsuario(
+idTipoUsuario INT PRIMARY KEY IDENTITY,
+NomeTipoUsuario VARCHAR(30)UNIQUE NOT NULL
+);
+
+CREATE TABLE  Usuario(
+idUsuario INT PRIMARY KEY IDENTITY,
+NomeUsuario VARCHAR(50)NOT NULL,
+Email VARCHAR(30)UNIQUE NOT NULL,
+senha VARCHAR(30)NOT NULL,
+Telefone VARCHAR(15)NOT NULL UNIQUE,
+Foto IMAGE,
+idTipoUsuario INT FOREIGN KEY REFERENCES TipoUsuario(idTipoUsuario)NOT NULL
+);
+
+CREATE TABLE Estadio(
+idEstadio INT PRIMARY KEY IDENTITY,
+NomeEstadio VARCHAR(50)UNIQUE NOT NULL,
+Endereco Text NOT NULL
+);
+
+CREATE TABLE Evento(
+idEvento INT PRIMARY KEY IDENTITY,
+DataEvento DATE NOT NULL,
+Descricao Text NOT NULL,
+HoraDoEvento DATETIME NOT NULL,
+idEstadio INT FOREIGN KEY REFERENCES Estadio(idEstadio)NOT NULL,
+idTipoEvento INT FOREIGN KEY REFERENCES TipoEvento(idTipoEvento)NOT NULL,
+idTipoParticipacao INT FOREIGN KEY REFERENCES TipoParticipacao(idTipoParticipacao)NOT NULL,
+idEventoShow INT FOREIGN KEY REFERENCES EventoShow(idEventoShow),
+idEventoFutebol INT FOREIGN KEY REFERENCES EventoFutebol(idEventoFutebol),
+idEventoE_Sports INT FOREIGN KEY REFERENCES EventoE_Sports(idEventoE_Sports),
+AcessoLivre BIT DEFAULT(1)NOT NULL
+);
+
+CREATE TABLE TipoParticipacao(
+idTipoParticipacao INT PRIMARY KEY IDENTITY,
+TituloParticipacao  VARCHAR(30)NOT NULL UNIQUE
+);
+
+CREATE TABLE TipoEvento(
+idTipoEvento INT PRIMARY KEY IDENTITY,
+NomeTipoEvento VARCHAR(50)NOT NULL UNIQUE
+);
+
+CREATE TABLE EventoShow(
+idEventoShow INT PRIMARY KEY IDENTITY,
+NomeEventoShow VARCHAR(120)NOT NULL
+);
+
+CREATE TABLE EventoFutebol(
+idEventoFutebol INT PRIMARY KEY IDENTITY,
+idTimeCasa INT FOREIGN KEY REFERENCES Times(idTimes)NOT NULL,
+idTimeVisitante INT FOREIGN KEY REFERENCES Times(idTimes)NOT NULL
+);
+
+CREATE TABLE EventoE_Sports(
+idEventoE_Sports INT PRIMARY KEY IDENTITY,
+NomeEventoE_Sports VARCHAR(70)NOT NULL
+);
+
+CREATE TABLE Times(
+idTimes INT PRIMARY KEY IDENTITY,
+NomeTime VARCHAR(50)NOT NULL UNIQUE
+);
+
+CREATE TABLE Favoritos(
+idFavoritos INT PRIMARY KEY IDENTITY,
+idUsuario INT FOREIGN KEY REFERENCES Usuario(idUsuario),
+idEvento INT FOREIGN KEY REFERENCES Evento(idEvento),
+StatusFavorito BIT DEFAULT(1)
+);
