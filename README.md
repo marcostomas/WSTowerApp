@@ -8,13 +8,13 @@ Veja a [documentação](./Documentos/Documentacao.md "Documentação em .docx").
 
 |Atividade                              |Início   |Término   |Duração |Status                  |
 |---------------------------------------|---------|----------|--------|------------------------|
-|**Back-END(Web API + Banco de Dados)** |         |          |        |  A Desenvolver         |
-|Criar Banco de Dados                   |  18/07  |          |        |  A Desenvolver         |
+|**Back-END(Web API + Banco de Dados)** |         |          |        |                        |
+|Criar Banco de Dados                   |  20/07  |   20/07  | 1 Dia  |  Finalizado            |
 |Criar Web API + Banco de Dados         |  18/07  |          |        |  A Desenvolver         |
 |Testes Postman                         |         |          |        |  A Fazer               |
 |**Aplicação Mobile(Front-End)**        |         |          |        |                        |
-|Criar as Interfaces do Usuário         |  18/07  |          |        |  A Desenvolver         |
-|Promover a Navegabilidade das Telas    |  19/07  |          |        |  A Desenvolver         |
+|Criar as Interfaces do Usuário         |  20/07  |   21/07  | 1 Dia  |  Em Desenvolvimento    |
+|Promover a Navegabilidade das Telas    |  20/07  |   21/07  | 1 Dia  |  Em Desenvolvimento    |
 |Definir Animações                      |  19/07  |          |        |  A Desenvolver         |
 |Testar                                 |         |          |        |  A Fazer               |
 |**Aplicação Mobile(Back-End)**         |         |          |        |                        |

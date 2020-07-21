@@ -16,5 +16,10 @@ namespace WSTowerApp.Views
         {
             InitializeComponent();
         }
+
+        private void buscarEventos_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
+        }
     }
 }
