@@ -10,15 +10,15 @@ Veja a [documentação](./Documentos/Documentacao.md "Documentação em .docx").
 |---------------------------------------|---------|----------|--------|------------------------|
 |**Back-END(Web API + Banco de Dados)** |         |          |        |                        |
 |Criar Banco de Dados                   |  20/07  |   20/07  | 1 Dia  |  Finalizado            |
-|Criar Web API + Banco de Dados         |  18/07  |          |        |  A Desenvolver         |
+|Criar Web API + Banco de Dados         |  21/07  |   21/07  | 1 Dia  |  Feito                 |
 |Testes Postman                         |         |          |        |  A Fazer               |
 |**Aplicação Mobile(Front-End)**        |         |          |        |                        |
-|Criar as Interfaces do Usuário         |  20/07  |   21/07  | 1 Dia  |  Em Desenvolvimento    |
-|Promover a Navegabilidade das Telas    |  20/07  |   21/07  | 1 Dia  |  Em Desenvolvimento    |
+|Criar as Interfaces do Usuário         |  20/07  |   22/07  | 1 Dia  |  Feito                 |
+|Promover a Navegabilidade das Telas    |  20/07  |   22/07  | 1 Dia  |  Em Desenvolvimento    |
 |Definir Animações                      |  19/07  |          |        |  A Desenvolver         |
 |Testar                                 |         |          |        |  A Fazer               |
 |**Aplicação Mobile(Back-End)**         |         |          |        |                        |
-|Conectar os Buttons                    |  19/07  |          |        |  A Desenvolver         |
+|Conectar os Buttons                    |  20/07  |   22/07  | 2 Dias |  Feito                 |
 |Promover a Regra de Negócios do App    |  20/07  |          |        |  A Desenvolver         |
 |Consumir a API pelo Aplicativo         |  21/07  |          |        |  A Desenvolver         |
 |**Outros**                             |         |          |        |                        |

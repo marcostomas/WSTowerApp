@@ -30,7 +30,7 @@
                     HeightRequest="40"/>
             </StackLayout>
 
-            <StackLayout Margin="34,82,34,0" Orientation="Horizontal">
+            <StackLayout Margin="34,82,0,0" Orientation="Horizontal">
                 <Image
                     Source="{local:ImageResource WSTowerApp.Resource.agenda3.jpg}"
                     WidthRequest="21"
@@ -38,22 +38,49 @@
 
                 <SearchBar
                     x:Name="buscarEventos"
-                    TextChanged="buscarEventos_TextChanged"/>
+                    TextChanged="buscarEventos_TextChanged"
+                    WidthRequest="280"/>
+
             </StackLayout>
 
-            <StackLayout>
+            <StackLayout BackgroundColor="#D7D7D7">
                 <Grid>
-                    <ListView>
-                        <ListView.ItemsSource>
-                            <x:Array Type="{x:Type x:String}">
-                                <x:String>Teste 1</x:String>
-                                <x:String>Teste 2</x:String>
-                                <x:String>Teste 3</x:String>
-                                <x:String>Teste 4</x:String>
-                                <x:String>Teste 5</x:String>
-                                <x:String>Teste 6</x:String>
-                            </x:Array>
-                        </ListView.ItemsSource>
+                    <ListView
+                        ItemsSource="{Binding Evento}">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label
+                                            Grid.Column="4"
+                                            Text="{Binding NomeEvento}"
+                                            FontAttributes="Bold" />
+                                        
+                                        <Label Grid.Column="2"
+                                            Text="{Binding NomeEstadio}"
+                                            FontAttributes="Bold" />
+                                        
+                                        <Label Grid.Row="1"
+                                            Grid.Column="1"
+                                            Text="{Binding NomeTipoParticipacao NomeTipoEvento}"/>
+
+                                        <Label Grid.Row="1"
+                                            Grid.Column="1"
+                                            Text="{Binding NomeTipoParticipacao NomeTipoEvento}"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
                     </ListView>
                 </Grid>
             </StackLayout>
