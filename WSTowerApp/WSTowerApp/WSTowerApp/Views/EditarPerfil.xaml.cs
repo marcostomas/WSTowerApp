@@ -20,8 +20,9 @@ namespace WSTowerApp.Views
 
         async void OnClicekd_Alterar(object sender, EventArgs e)
         {
+            await DisplayAlert("Sucesso","Dados alterados com sucesso","Ok");
             await Navigation.PopAsync();
-            App.Current.MainPage = new MenuPrincipal();
+
         }
     }
 }

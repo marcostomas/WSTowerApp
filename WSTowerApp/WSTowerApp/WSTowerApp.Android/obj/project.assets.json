@@ -1969,24 +1969,24 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marcos\\.nuget\\packages\\": {},
+    "C:\\Users\\thi_s\\.nuget\\packages\\": {},
     "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj",
+      "projectUniqueName": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj",
       "projectName": "WSTowerApp.Android",
-      "projectPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj",
-      "packagesPath": "C:\\Users\\marcos\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\obj\\",
+      "projectPath": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj",
+      "packagesPath": "C:\\Users\\thi_s\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
-        "C:\\Users\\marcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\thi_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
@@ -2000,8 +2000,8 @@
       "frameworks": {
         "monoandroid90": {
           "projectReferences": {
-            "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {
-              "projectPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj"
+            "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {
+              "projectPath": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj"
             }
           }
         }

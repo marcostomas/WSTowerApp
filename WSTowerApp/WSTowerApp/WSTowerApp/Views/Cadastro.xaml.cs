@@ -20,6 +20,7 @@ namespace WSTowerApp.Views
 
         private void OnClicked_CadastroRealizado(object sender, EventArgs e)
         {
+            DisplayAlert("Sucesso", "Dados cadastrados com sucesso", "Ok");
             Navigation.RemovePage(this);
         }
     }

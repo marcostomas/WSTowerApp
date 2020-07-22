@@ -26,5 +26,7 @@
             <Setter Property="FontSize" Value="14"/>
             <Setter Property="TextColor" Value="{StaticResource fontColorB}"/>
         </Style>
+
+        
     </Application.Resources>
 </Application>

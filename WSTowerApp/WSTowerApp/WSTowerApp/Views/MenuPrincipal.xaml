@@ -1,35 +1,31 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              x:Class="WSTowerApp.Views.MenuPrincipal"
              Title="MenuPrincipal"
-             MasterBehavior="Popover">
-    <MasterDetailPage.Master>
-        <ContentPage BackgroundColor="#e2f3f5" 
-                     Title="MenuPrincipal" >
-            <StackLayout>
-                <Button Text="Sobre"
+             BackgroundColor="#F5F5F5">
+    <StackLayout Margin="20,30">
+        <Button Text="Sobre"
                         Style="{StaticResource btnPadrao}"
+                        TextColor="{StaticResource fontColorA}"
                         Clicked="OnClicked_Sobre"/>
-                <Button Text="Perfil"
+        <Button Text="Perfil"
                         Style="{StaticResource btnPadrao}"
+                        TextColor="{StaticResource fontColorA}"
                         Clicked="OnClicked_Perfil"/>
-                <Button Text="Meus eventos"
+
+        <Button Text="Meus eventos"
                         Style="{StaticResource btnPadrao}"
+                        TextColor="{StaticResource fontColorA}"
                         Clicked="OnClicked_MeusEventos"/>
-                <Button Text="Sair" 
-                        Style="{StaticResource btnPadrao}"/>
-            </StackLayout>
-        </ContentPage>
-    </MasterDetailPage.Master>
-    <MasterDetailPage.Detail>
-        <ContentPage>
-            <StackLayout Margin="5,30,5,5">
-                
-            </StackLayout>
-        </ContentPage>
-    </MasterDetailPage.Detail>
-</MasterDetailPage>
+        
+        <Button Text="Sair" 
+                        Style="{StaticResource btnPadrao}"
+                        TextColor="{StaticResource fontColorA}"
+                        Clicked="OnClicked_Sair"/>
+       
+    </StackLayout>
+</ContentPage>

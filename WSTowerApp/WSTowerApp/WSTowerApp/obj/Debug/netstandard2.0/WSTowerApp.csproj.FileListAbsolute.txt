@@ -47,3 +47,9 @@ C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\ne
 C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\AlterarOK.xaml.g.cs
 C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\Excluir.xaml.g.cs
 C:\Users\marcos\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\ExcluirOK.xaml.g.cs
+C:\Users\thi_s\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\Alterar.xaml.g.cs
+C:\Users\thi_s\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\AlterarOK.xaml.g.cs
+C:\Users\thi_s\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\CadastroOK.xaml.g.cs
+C:\Users\thi_s\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\Excluir.xaml.g.cs
+C:\Users\thi_s\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\ExcluirOK.xaml.g.cs
+C:\Users\thi_s\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\MasterMenu.xaml.g.cs

@@ -15,6 +15,12 @@ namespace WSTowerApp.Views
         public Sobre()
         {
             InitializeComponent();
+           
+        }
+
+        private void OnClicked_Voltar(object sender, EventArgs e)
+        {
+            
         }
 
         //Adicionar o método aqui

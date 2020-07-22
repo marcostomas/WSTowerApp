@@ -44,11 +44,12 @@
 
             <StackLayout Margin="0,48,0,0">
                 <!--Adicionar clicked no botão e, consequentemente, o método em Sobre.xaml.cs-->
-                <Button
+                <!--<Button
                     Text="Voltar"
                     Style="{StaticResource btnPadrao}"
                     BackgroundColor="{StaticResource azul}"
-                    FontAttributes="Bold"/>
+                    FontAttributes="Bold"
+                    Clicked="OnClicked_Voltar"/>-->
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -20,12 +21,12 @@ namespace WSTowerApp.Views
 
         private void OnClicked_Entrar(object sender, EventArgs e)
         {
-            App.Current.MainPage = new NavigationPage(new MenuPrincipal());
+            App.Current.MainPage = new MasterMenu();
         }
 
-        private void OnClicked_Cadastrar(object sender, EventArgs e)
+        private async void OnClicked_Cadastrar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Cadastro());
+            await Navigation.PushAsync(new Cadastro());
         }
     }
 }
