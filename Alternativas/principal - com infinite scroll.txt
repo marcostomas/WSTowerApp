@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:WSTowerApp"
+             xmlns:Controls="clr-namespace:WSTowerApp;assembly=WSTowerApp" 
+             x:Class="WSTowerApp.Views.Principal"
+             Title="Principal">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="31,29,0,0">
+                <Label
+                    Text="Bem-vindo,"
+                    FontSize="Medium"
+                    Style="{StaticResource lbTextos}"
+                    FontAttributes="Bold"/>
+
+                <Label
+                    Text="Visitante"
+                    FontSize="Medium"
+                    TextColor="{StaticResource azul}"
+                    FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Margin="45,57,45,0">
+                <Image 
+                    Source="{local:ImageResource WSTowerApp.Resource.WSTower-marca.png}"
+                    WidthRequest="270"
+                    HeightRequest="40"/>
+            </StackLayout>
+
+            <StackLayout Margin="34,82,0,0" Orientation="Horizontal">
+                <Image
+                    Source="{local:ImageResource WSTowerApp.Resource.agenda3.jpg}"
+                    WidthRequest="21"
+                    HeightRequest="16"/>
+
+                <SearchBar
+                    x:Name="buscarEventos"
+                    WidthRequest="280"/>
+
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#D7D7D7">
+                <Controls:InfiniteScrollListView LoadCommand="{Biding LoadCommand}" ItemsSource="{Biding Items}"/>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -5,6 +5,7 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
              xmlns:local="clr-namespace:WSTowerApp"
+             xmlns:Controls="clr-namespace:WSTowerApp;assembly=WSTowerApp" 
              x:Class="WSTowerApp.Views.Principal"
              Title="Principal">
     <ContentPage.Content>
@@ -38,51 +39,72 @@
 
                 <SearchBar
                     x:Name="buscarEventos"
-                    TextChanged="buscarEventos_TextChanged"
                     WidthRequest="280"/>
 
             </StackLayout>
 
             <StackLayout BackgroundColor="#D7D7D7">
-                <Grid>
-                    <ListView
-                        ItemsSource="{Binding Evento}">
-                        <ListView.ItemTemplate>
-                            <DataTemplate>
-                                <ViewCell>
-                                    <Grid>
-                                        <Grid.RowDefinitions>
-                                            <RowDefinition Height="Auto" />
-                                            <RowDefinition Height="*" />
-                                        </Grid.RowDefinitions>
+                <ScrollView>
+                    <Grid>
+                        <ListView 
+                            x:Name="EventosLista"
+                            ItemTapped="EventosLista_ItemTapped">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="*" />
+                                            </Grid.RowDefinitions>
 
-                                        <Grid.ColumnDefinitions>
-                                            <ColumnDefinition Width="Auto" />
-                                            <ColumnDefinition Width="*" />
-                                        </Grid.ColumnDefinitions>
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
 
-                                        <Label
-                                            Grid.Column="4"
-                                            Text="{Binding NomeEvento}"
-                                            FontAttributes="Bold" />
-                                        
-                                        <Label Grid.Column="2"
-                                            Text="{Binding NomeEstadio}"
-                                            FontAttributes="Bold" />
-                                        
-                                        <Label Grid.Row="1"
-                                            Grid.Column="1"
-                                            Text="{Binding NomeTipoParticipacao NomeTipoEvento}"/>
+                                            <Label
+                                                Grid.ColumnSpan="50"
+                                                Grid.RowSpan="30"
+                                                Text="{Binding DataHora}"
+                                                FontAttributes="Bold" 
+                                                HorizontalTextAlignment="Start"
+                                                VerticalTextAlignment="Center"/>
 
-                                        <Label Grid.Row="1"
-                                            Grid.Column="1"
-                                            Text="{Binding NomeTipoParticipacao NomeTipoEvento}"/>
-                                    </Grid>
-                                </ViewCell>
-                            </DataTemplate>
-                        </ListView.ItemTemplate>
-                    </ListView>
-                </Grid>
+                                            <Label
+                                                Grid.ColumnSpan="70"
+                                                Grid.RowSpan="50"
+                                                Text="{Binding NomeEvento}"
+                                                FontAttributes="Bold"
+                                                HorizontalTextAlignment="Center"/>
+
+                                            <Label 
+                                                Grid.ColumnSpan="50"
+                                                Grid.RowSpan="70"
+                                                Text="{Binding NomeEstadio}"
+                                                FontAttributes="Bold" />
+
+                                            <Label 
+                                                Grid.ColumnSpan="70"
+                                                Grid.RowSpan="90"
+                                                Text="{Binding NomeTipoParticipacao}"/>
+
+                                            <Label 
+                                                Grid.ColumnSpan="80"
+                                                Grid.RowSpan="110"
+                                                Text="{Binding NomeTipoEvento}"
+                                                TextColor="{StaticResource fontColorA}"/>
+
+                                            <Label Grid.RowSpan="90"
+                                                Grid.ColumnSpan="130"
+                                                Text="{Binding Favorito}"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </ScrollView>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>

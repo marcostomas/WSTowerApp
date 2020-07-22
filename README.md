@@ -9,20 +9,20 @@ Veja a [documentação](./Documentos/Documentacao.md "Documentação em .docx").
 |Atividade                              |Início   |Término   |Duração |Status                  |
 |---------------------------------------|---------|----------|--------|------------------------|
 |**Back-END(Web API + Banco de Dados)** |         |          |        |                        |
-|Criar Banco de Dados                   |  20/07  |   20/07  | 1 Dia  |  Finalizado            |
+|Criar Banco de Dados                   |  20/07  |   20/07  | 1 Dia  |  Feito                 |
 |Criar Web API + Banco de Dados         |  21/07  |   21/07  | 1 Dia  |  Feito                 |
 |Testes Postman                         |         |          |        |  A Fazer               |
 |**Aplicação Mobile(Front-End)**        |         |          |        |                        |
-|Criar as Interfaces do Usuário         |  20/07  |   22/07  | 1 Dia  |  Feito                 |
-|Promover a Navegabilidade das Telas    |  20/07  |   22/07  | 1 Dia  |  Em Desenvolvimento    |
-|Definir Animações                      |  19/07  |          |        |  A Desenvolver         |
+|Criar as Interfaces do Usuário         |  20/07  |   22/07  | 2 Dias |  Feito                 |
+|Promover a Navegabilidade das Telas    |  20/07  |   22/07  | 2 Dias |  Feito                 |
+|Definir Animações                      |         |          |        |  A Fazer               |
 |Testar                                 |         |          |        |  A Fazer               |
 |**Aplicação Mobile(Back-End)**         |         |          |        |                        |
-|Conectar os Buttons                    |  20/07  |   22/07  | 2 Dias |  Feito                 |
-|Promover a Regra de Negócios do App    |  20/07  |          |        |  A Desenvolver         |
-|Consumir a API pelo Aplicativo         |  21/07  |          |        |  A Desenvolver         |
+|Conectar os Buttons                    |  20/07  |   21/07  | 1 Dia  |  Feito                 |
+|Promover a Regra de Negócios do App    |  20/07  |   20/07  | 1 Dia  |  Feito                 |
+|Consumir a API pelo Aplicativo         |  22/07  |          |        |  Em Desenvolvimento    |
 |**Outros**                             |         |          |        |                        |
-|Funcionalidades extras                 |         |          |        |  Em Planejamento       |
+|Funcionalidades extras                 |         |          |        |  Abandonadas           |
 
 ## Colaboradores
 

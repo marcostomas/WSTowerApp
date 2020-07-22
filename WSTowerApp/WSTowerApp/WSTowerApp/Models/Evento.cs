@@ -7,7 +7,7 @@ namespace WSTowerApp.Models
     public class Evento
     {
         public int ID { get; set; }
-        public DateTime DataEHora { get; set; }
+        public DateTime DataHora { get; set; }
         public string NomeEstadio { get; set; }
 
         public string NomeTipoEvento { get; set; }
@@ -17,6 +17,11 @@ namespace WSTowerApp.Models
 
         public bool AcessoLivre { get; set; }
         public bool Favorito { get; set; }
+
+        //public override string ToString()
+        //{
+        //    return NomeEvento;
+        //}
     }
 
    

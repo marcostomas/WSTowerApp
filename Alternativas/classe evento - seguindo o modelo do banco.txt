@@ -1,0 +1,38 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace WSTowerApp.Models
+{
+    public class Evento
+    {
+        public int ID { get; set; }
+        public DateTime DataEHora { get; set; }
+        public int IdEstadio { get; set; }
+
+        public int IdTipoEvento { get; set; }
+        public int IdTipoParticipacao { get; set; }
+
+        public int IdEventoShow { get; set; }
+        public int IdEventoESports {get; set;}
+        public int IdEventoFutebol { get; set; }
+
+        public bool AcessoLivre { get; set; }
+
+        public Evento(int idEvento, DateTime dataHora, int idEstadio, int idTipoEvento,
+            int idTipoParticipacao, int idEventoShow, int idEventoESports, int idEventoFutebol, bool acessoLivre)
+        {
+            this.ID = idEvento;
+            this.DataEHora = dataHora;
+            this.IdEstadio = idEstadio;
+            this.IdTipoEvento = idTipoEvento;
+            this.IdTipoParticipacao = idTipoParticipacao;
+            this.IdEventoShow = idEventoShow;
+            this.IdEventoESports = idEventoESports;
+            this.IdEventoFutebol = idEventoFutebol;
+            this.AcessoLivre = acessoLivre;
+        }
+    }
+
+   
+}

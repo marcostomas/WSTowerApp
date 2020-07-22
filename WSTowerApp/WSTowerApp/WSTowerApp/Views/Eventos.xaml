@@ -51,21 +51,66 @@
 
             </StackLayout>
 
-            <StackLayout>
-                <Grid>
-                    <ListView>
-                        <ListView.ItemsSource>
-                            <x:Array Type="{x:Type x:String}">
-                                <x:String>Teste 1</x:String>
-                                <x:String>Teste 2</x:String>
-                                <x:String>Teste 3</x:String>
-                                <x:String>Teste 4</x:String>
-                                <x:String>Teste 5</x:String>
-                                <x:String>Teste 6</x:String>
-                            </x:Array>
-                        </ListView.ItemsSource>
-                    </ListView>
-                </Grid>
+            <StackLayout BackgroundColor="#D7D7D7">
+                <ScrollView>
+                    <Grid>
+                        <ListView x:Name="EventosLista">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="*" />
+                                            </Grid.RowDefinitions>
+
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+
+                                            <Label
+                                                Grid.ColumnSpan="50"
+                                                Grid.RowSpan="30"
+                                                Text="{Binding DataHora}"
+                                                FontAttributes="Bold" 
+                                                HorizontalTextAlignment="Start"
+                                                VerticalTextAlignment="Center"/>
+
+                                            <Label
+                                                Grid.ColumnSpan="70"
+                                                Grid.RowSpan="50"
+                                                Text="{Binding NomeEvento}"
+                                                FontAttributes="Bold"
+                                                HorizontalTextAlignment="Center"/>
+
+                                            <Label 
+                                                Grid.ColumnSpan="50"
+                                                Grid.RowSpan="70"
+                                                Text="{Binding NomeEstadio}"
+                                                FontAttributes="Bold" />
+
+                                            <Label 
+                                                Grid.ColumnSpan="70"
+                                                Grid.RowSpan="90"
+                                                Text="{Binding NomeTipoParticipacao}"/>
+
+                                            <Label 
+                                                Grid.ColumnSpan="80"
+                                                Grid.RowSpan="110"
+                                                Text="{Binding NomeTipoEvento}"
+                                                TextColor="{StaticResource fontColorA}"/>
+
+                                            <Label Grid.RowSpan="90"
+                                                Grid.ColumnSpan="130"
+                                                Text="{Binding Favorito}"/>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </ScrollView>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
