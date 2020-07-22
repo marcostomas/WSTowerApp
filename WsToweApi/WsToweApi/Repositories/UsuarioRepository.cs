@@ -146,15 +146,15 @@ namespace WsToweApi.Repositories
             using (WSTowerContext ctx = new WSTowerContext())
             {
                 try
-                {
-                    Usuario usuarioAchado = ctx.Usuario.FirstOrDefault(U => U.Email == Usuario.Email && U.Senha == Usuario.Senha);
+                {                         
+                   Usuario usuarioAchado = ctx.Usuario.FirstOrDefault(U => U.Email == Usuario.Email && U.Senha == Usuario.Senha);
 
-                    if (usuarioAchado == null)
-                    {
-                        return null;
-                    }
-                    return usuarioAchado;
-
+                  if (usuarioAchado == null)
+                 {
+                 return null;
+                 }
+                 return usuarioAchado;
+               
                 }
                 catch (Exception e)
                 {

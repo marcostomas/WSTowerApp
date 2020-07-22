@@ -1,9 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.IdentityModel.Tokens;
 using WsToweApi.Domains;
 using WsToweApi.Repositories;
 using WsToweApi.ViewModels;
@@ -34,7 +37,29 @@ namespace WsToweApi.Controllers
                     return BadRequest("Email ou senha incorretos");
                 }
 
-                return Ok("Bem vindo:" + UsuarioBuscado.NomeUsuario);
+                var claims = new[]
+            {
+                new Claim(JwtRegisteredClaimNames.Email, UsuarioBuscado.Email),
+                new Claim(JwtRegisteredClaimNames.Jti, UsuarioBuscado.IdUsuario.ToString()),
+                new Claim(ClaimTypes.Role, UsuarioBuscado.IdTipoUsuario.ToString())
+            };
+
+                var key = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes("WSTower-chave-autenticacao"));
+
+                var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+                var token = new JwtSecurityToken(
+                    issuer: "WsTowerWebApi",                 // emissor do token
+                    audience: "WsTowerWebApi",               // destinatário do token
+                    claims: claims,                          // dados definidos acima
+                    expires: DateTime.Now.AddMinutes(30),    // tempo de expiração
+                    signingCredentials: creds                // credenciais do token
+                );
+
+                return Ok(new
+                {
+                    token = new JwtSecurityTokenHandler().WriteToken(token)
+                });
             }
             catch (Exception e)
             {
