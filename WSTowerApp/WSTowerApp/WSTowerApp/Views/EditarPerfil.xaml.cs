@@ -21,7 +21,7 @@ namespace WSTowerApp.Views
         async void OnClicekd_Alterar(object sender, EventArgs e)
         {
             await Navigation.PopAsync();
-            App.Current.MainPage = new MenuPrincipal();
+            App.Current.MainPage = new Alterar();
         }
     }
 }

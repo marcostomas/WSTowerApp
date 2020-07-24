@@ -8,7 +8,8 @@
              x:Class="WSTowerApp.Views.Sobre"
              Title="Sobre">
     <ContentPage.Content>
-        <StackLayout Margin="45,50,45,0">
+        <ScrollView>
+            <StackLayout Margin="45,50,45,0">
             <StackLayout>
                 <Image 
                     Source="{local:ImageResource WSTowerApp.Resource.WSTower-marca.png}"
@@ -42,5 +43,6 @@
                     HeightRequest="36"/>
             </StackLayout>
         </StackLayout>
+            </ScrollView>
     </ContentPage.Content>
 </ContentPage>

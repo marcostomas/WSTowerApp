@@ -44,6 +44,7 @@ namespace WSTowerApp.Views
                 else
                 {
                     MessagingCenter.Send<String>("Erro no Cadastro tente novamente", "ErroCadastro");
+                    Navigation.PushAsync(new Login());
                 }
 
             }
