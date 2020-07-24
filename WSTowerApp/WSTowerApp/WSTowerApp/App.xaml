@@ -6,6 +6,25 @@
              mc:Ignorable="d"
              x:Class="WSTowerApp.App">
     <Application.Resources>
+        <Color x:Key="azul">#2881b9</Color>
+        <Color x:Key="verde">#2fcb71</Color>
+        <Color x:Key="cinzento">#818181</Color>
+        <Color x:Key="fontColorA">Black</Color>
+        <Color x:Key="fontColorB">White</Color>
 
+        <Style x:Key="lbTextos" TargetType="Label">
+            <Setter Property="FontFamily" Value="Exo"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="TextColor" Value="{StaticResource fontColorA}"/>
+        </Style>
+       
+         <Style x:Key="btnPadrao" TargetType="Button">
+            <Setter Property="HorizontalOptions" Value="CenterAndExpand"/>
+            <Setter Property="WidthRequest" Value="256"/>
+            <Setter Property="HeightRequest" Value="37"/>
+            <Setter Property="FontFamily" Value="Roboto"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="TextColor" Value="{StaticResource fontColorB}"/>
+        </Style>
     </Application.Resources>
 </Application>

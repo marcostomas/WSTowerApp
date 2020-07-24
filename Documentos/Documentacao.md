@@ -10,6 +10,7 @@ Aplicação mobile para a empresa Ws Tower, o aplicativo tem como principal fun�
 - Xamarin;
 - SQL;
 - Web ASP.NET Core(Web API).
+
 ### Ferramentas Utilizadas
 - SSMS;
 - Visual Studio;
@@ -30,7 +31,8 @@ Aplicação mobile para a empresa Ws Tower, o aplicativo tem como principal fun�
 - Testar.
 
 ### Cronograma
-Veja o [cronograma](./Cronograma_Grupo-9.xlsx "Cronograma do grupo 9 em .xlsx")
+[Veja o cronograma](../README.md "Cronograma do grupo 9 em no README.md")
+[Baixe o cronograma](https://github.com/marcostomas/WSTowerApp/raw/telas/Documentos/Cronograma_Grupo-9.xlsx "Cronograma do grupo 9 em .xlsx")
 
 ## Guia de Estilos
 

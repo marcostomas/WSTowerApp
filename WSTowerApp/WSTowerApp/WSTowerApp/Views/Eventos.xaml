@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:WSTowerApp"
+             x:Class="WSTowerApp.Views.Eventos"
+             Title="Meus eventos">
+    <ContentPage.Content>
+        <StackLayout>
+            <StackLayout Orientation="Horizontal" Margin="31,29,0,0">
+                <Label
+                    Text="Bem-vindo,"
+                    FontSize="Medium"
+                    Style="{StaticResource lbTextos}"
+                    FontAttributes="Bold"/>
+
+                <Label
+                    Text="Visitante"
+                    FontSize="Medium"
+                    TextColor="{StaticResource azul}"
+                    FontAttributes="Bold"/>
+            </StackLayout>
+
+            <StackLayout Margin="45,57,45,0">
+                <Image 
+                    Source="{local:ImageResource WSTowerApp.Resource.WSTower-marca.png}"
+                    WidthRequest="270"
+                    HeightRequest="40"/>
+            </StackLayout>
+            
+            <StackLayout Margin="0,15,0,0">
+                <Label 
+                    Text="Eventos" 
+                    HorizontalOptions="CenterAndExpand" 
+                    Style="{StaticResource lbTextos}"
+                    FontSize="26"/>
+            </StackLayout>
+
+            <StackLayout Margin="34,30,34,0" Orientation="Horizontal">
+                <Image
+                    Source="{local:ImageResource WSTowerApp.Resource.agenda3.jpg}"
+                    WidthRequest="21"
+                    HeightRequest="16"/>
+
+                <Label
+                    Text="FAVORITOS"
+                    Style="{StaticResource lbTextos}"
+                    FontSize="Large"/>
+
+            </StackLayout>
+
+            <StackLayout BackgroundColor="#D7D7D7">
+                <ScrollView>
+                    <Grid>
+                        <ListView x:Name="EventosLista" HasUnevenRows="True">
+                            <ListView.ItemTemplate>
+                                <DataTemplate>
+                                    <ViewCell>
+                                        <Grid>
+                                            <Grid.RowDefinitions>
+                                                <RowDefinition Height="Auto" />
+                                                <RowDefinition Height="*" />
+                                            </Grid.RowDefinitions>
+
+                                            <Grid.ColumnDefinitions>
+                                                <ColumnDefinition Width="Auto" />
+                                                <ColumnDefinition Width="*" />
+                                            </Grid.ColumnDefinitions>
+                                            <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="StartAndExpand" Margin="20,0,0,0">
+                                                <Label
+                                                    Grid.ColumnSpan="50"
+                                                    Grid.RowSpan="30"
+                                                    Text="{Binding DataHora}"
+                                                    FontAttributes="Bold" 
+                                                    HorizontalTextAlignment="Start"
+                                                    VerticalTextAlignment="Center"/>
+                                            </StackLayout>
+
+                                            <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Start" Margin="20,15,0,0">
+                                                <Label
+                                                    Grid.ColumnSpan="70"
+                                                    Grid.RowSpan="50"
+                                                    Text="{Binding NomeEvento}"
+                                                    FontAttributes="Bold"
+                                                    HorizontalTextAlignment="Center"/>
+                                            </StackLayout>
+
+                                            <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="20,10,0,0">
+                                                <Label
+                                                    Text="{Binding NomeEstadio}"
+                                                    FontAttributes="Bold" />
+                                            </StackLayout>
+
+                                            <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Margin="20,70,0,0">
+                                                <Label 
+                                                    Grid.ColumnSpan="70"
+                                                    Grid.RowSpan="90"
+                                                    Text="{Binding NomeTipoParticipacao}"/>
+
+                                                <Label 
+                                                    Grid.ColumnSpan="80"
+                                                    Grid.RowSpan="110"
+                                                    Text="{Binding NomeTipoEvento}"
+                                                    TextColor="{StaticResource fontColorA}"/>
+                                            </StackLayout>
+
+                                            <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="End">
+                                                <Label Grid.RowSpan="90"
+                                                    Grid.ColumnSpan="130"
+                                                    Text="{Binding Favorito}"/>
+                                            </StackLayout>
+                                        </Grid>
+                                    </ViewCell>
+                                </DataTemplate>
+                            </ListView.ItemTemplate>
+                        </ListView>
+                    </Grid>
+                </ScrollView>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

@@ -1,0 +1,58 @@
+<StackLayout BackgroundColor="#D7D7D7">
+                <Grid>
+                    <ListView 
+                        x:Name="EventosLista"
+                        ItemTapped="EventosLista_ItemTapped">
+                        <ListView.ItemTemplate>
+                            <DataTemplate>
+                                <ViewCell>
+                                    <Grid>
+                                        <Grid.RowDefinitions>
+                                            <RowDefinition Height="Auto" />
+                                            <RowDefinition Height="*" />
+                                        </Grid.RowDefinitions>
+
+                                        <Grid.ColumnDefinitions>
+                                            <ColumnDefinition Width="Auto" />
+                                            <ColumnDefinition Width="*" />
+                                        </Grid.ColumnDefinitions>
+
+                                        <Label
+                                            Grid.Column="1"
+                                            Grid.Row="3"
+                                            Text="{Binding DataHora}"
+                                            FontAttributes="Bold" />
+                                        
+                                        <Label
+                                            Grid.Column="4"
+                                            Grid.Row="2"
+                                            Text="{Binding NomeEvento}"
+                                            FontAttributes="Bold" />
+                                        
+                                        <Label 
+                                            Grid.Column="2"
+                                            Grid.Row="2"
+                                            Text="{Binding NomeEstadio}"
+                                            FontAttributes="Bold" />
+                                        
+                                        <Label 
+                                            Grid.Column="1"
+                                            Grid.RowSpan="2"
+                                            Text="{Binding NomeTipoParticipacao}"/>
+                                        
+                                        <Label 
+                                            Grid.Column="1"
+                                            Grid.Row="2"
+                                            Text="{Binding NomeTipoEvento}"
+                                            TextColor="{StaticResource fontColorA}"/>
+
+                                        <Label Grid.Row="1"
+                                            Grid.Column="2"
+                                            Text="{Binding Favorito}"/>
+                                    </Grid>
+                                </ViewCell>
+                            </DataTemplate>
+                        </ListView.ItemTemplate>
+                    </ListView>
+                </Grid>
+            </StackLayout>

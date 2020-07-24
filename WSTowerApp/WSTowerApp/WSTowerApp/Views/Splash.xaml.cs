@@ -15,6 +15,14 @@ namespace WSTowerApp.Views
         public Splash()
         {
             InitializeComponent();
+            Inicializar();
+        }
+
+        private async void Inicializar()
+        {
+            await Task.Delay(4000);
+
+            App.Current.MainPage = new NavigationPage(new Login());
         }
     }
 }
