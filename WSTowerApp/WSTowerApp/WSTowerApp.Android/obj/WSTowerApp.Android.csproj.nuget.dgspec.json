@@ -1,24 +1,24 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj": {}
+    "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj": {
+    "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj",
+        "projectUniqueName": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj",
         "projectName": "WSTowerApp.Android",
-        "projectPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj",
-        "packagesPath": "C:\\Users\\marcos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\obj\\",
+        "projectPath": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj",
+        "packagesPath": "C:\\Users\\thi_s\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\obj\\",
         "projectStyle": "PackageReference",
         "skipContentFileWrite": true,
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
         ],
         "configFilePaths": [
-          "C:\\Users\\marcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thi_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -32,8 +32,8 @@
         "frameworks": {
           "monoandroid90": {
             "projectReferences": {
-              "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {
-                "projectPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj"
+              "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {
+                "projectPath": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj"
               }
             }
           }
@@ -54,20 +54,21 @@
         }
       }
     },
-    "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {
+    "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
+        "projectUniqueName": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
         "projectName": "WSTowerApp",
-        "projectPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
-        "packagesPath": "C:\\Users\\marcos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\obj\\",
+        "projectPath": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
+        "packagesPath": "C:\\Users\\thi_s\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\thi_s\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\"
+          "C:\\Microsoft\\Xamarin\\NuGet\\",
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
         ],
         "configFilePaths": [
-          "C:\\Users\\marcos\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\thi_s\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
         ],
@@ -92,6 +93,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "MagicGradients": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",
@@ -117,7 +122,7 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.301\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.302\\RuntimeIdentifierGraph.json"
         }
       }
     }

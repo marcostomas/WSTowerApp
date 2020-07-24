@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:WSTowerApp"
+             x:Class="WSTowerApp.Views.Login">
+    <ContentPage.Content
+        BackgroundColor="E5E5E5">
+        <StackLayout Margin="45,107,45,0">
+            <StackLayout>
+                <Image 
+                    Source="{local:ImageResource WSTowerApp.Resource.WSTower-marca.png}"
+                    WidthRequest="270"
+                    HeightRequest="40"/>
+            </StackLayout>
+
+            <StackLayout Margin="0,80,0,0">
+                <Label Text="Login" 
+               Style="{StaticResource lbTextos}"/>
+                <Entry  x:Name="lbEmail"
+                  BackgroundColor="{StaticResource fontColorB}"/>
+
+                <Label Text="Senha" 
+               Style="{StaticResource lbTextos}"/>
+                <Entry x:Name="lbSenha"
+                     IsPassword="True" 
+               BackgroundColor="{StaticResource fontColorB}"/>
+
+            </StackLayout>
+
+            <StackLayout Margin="0,29,0,0">
+                <Button Text="Entrar" 
+                    Style="{StaticResource btnPadrao}" 
+                    BackgroundColor="{StaticResource azul}"
+                    Clicked="OnClicked_Entrar"/>
+
+                <Button Text="Esqueceu a Senha?"  
+                    BackgroundColor="Transparent"
+                    TextColor="{StaticResource azul}"
+                    Margin="0,20" 
+                    Style="{StaticResource btnPadrao}"
+                    FontAttributes="Bold"/>
+            </StackLayout>
+
+
+            <StackLayout Margin="0,46,0,0">
+                <Button Text="Cadastrar" 
+                Style="{StaticResource btnPadrao}" 
+                BackgroundColor="{StaticResource verde}"
+                Clicked="OnClicked_Cadastrar"/>
+            </StackLayout>
+            
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

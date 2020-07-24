@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             xmlns:local="clr-namespace:WSTowerApp"
+             x:Class="WSTowerApp.Views.Perfil"
+             Title="Perfil">
+    <ContentPage.Content>
+
+        <StackLayout Margin="60,0,60,0">
+
+            <StackLayout Margin="15,15,15,0">
+                <Image 
+                Source="{local:ImageResource WSTowerApp.Resource.WSTower-marca.png}"
+                WidthRequest="270"
+                HeightRequest="40"/>
+            </StackLayout>
+            <StackLayout Margin="0,28,0,0">
+                <Image 
+                Source="{local:ImageResource WSTowerApp.Resource.user.png}"
+                WidthRequest="270"
+                HeightRequest="40"/>
+                <Label 
+                    Text="Visitante"
+                    HorizontalOptions="CenterAndExpand" 
+                    Style="{StaticResource lbTextos}"
+                    FontSize="26"/>
+            </StackLayout>
+ <ListView
+x:Name="PerfilList"
+ItemsSource="{Binding LogSESSEION}"
+            HasUnevenRows="True">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+
+            <StackLayout Margin="0,16,0,0">
+                <Label Text="{Binding Nome} 
+                       Style="{StaticResource lbTextos}"/>
+                <Entry BackgroundColor="{StaticResource fontColorB}" />
+
+                <Label Text="{Binding Email}"
+                       Style="{StaticResource lbTextos}"/>
+                <Entry BackgroundColor="{StaticResource fontColorB}"/>
+
+                <Label "{Binding Telefone}"
+                       Style="{StaticResource lbTextos}"/>
+                <Entry BackgroundColor="{StaticResource fontColorB}"/>
+            </StackLayout>
+
+</ViewCell>
+</DataTemplate>
+</ListView.ItemTemplate>
+</ListView>
+
+            <StackLayout Margin="0,25,0,25">
+                <Button 
+                    Text="Meus Eventos"
+                    Style ="{StaticResource btnPadrao}"
+                    Clicked="OnClicked_MeusEventosPerfil"
+                    FontAttributes="bold"
+                    BackgroundColor="{StaticResource azul}"/>
+
+                <StackLayout 
+                             Orientation="Horizontal" 
+                             HorizontalOptions="CenterAndExpand">
+
+                    <StackLayout Margin="0,21,30,0">
+                        <Button 
+                            Text="Editar" 
+                            Clicked="OnClicked_EditarPerfil"
+                            FontAttributes="Bold"
+                            BackgroundColor="{StaticResource verde}"/>
+                    </StackLayout>
+
+                    <StackLayout Margin="50,21,0,0">
+                        <Button 
+                            Text="Excluir"
+                            FontAttributes="Bold"
+                            BackgroundColor="{StaticResource verde}"/>
+                    </StackLayout>
+
+                </StackLayout>
+            </StackLayout>
+
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
