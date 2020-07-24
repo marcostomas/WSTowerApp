@@ -28,7 +28,7 @@ namespace WSTowerApp.Views
                ID = 1,
                Favorito = false,
                DataHora = Convert.ToDateTime("20/07/2020 20:00"),
-               NomeEvento = "Ponte Preta X Grêmio Novorizontino (portões fechados)",
+               NomeEvento = "Ponte Preta X Grêmio Novorizontino",
                NomeEstadio = "Estádio Cícero Pompeu de Toledo | São Paulo - Morumbi",
                NomeTipoParticipacao = "Transmissão Ao Vivo",
                NomeTipoEvento = "Futebol",

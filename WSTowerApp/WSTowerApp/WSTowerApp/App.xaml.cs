@@ -11,7 +11,7 @@ namespace WSTowerApp
         {
             InitializeComponent();
 
-            MainPage = new Login();
+            MainPage = new Eventos();
         }
 
         protected override void OnStart()

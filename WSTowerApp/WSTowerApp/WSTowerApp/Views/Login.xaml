@@ -17,14 +17,11 @@
             </StackLayout>
 
             <StackLayout Margin="0,80,0,0">
-                <Label Text="Login" 
-               Style="{StaticResource lbTextos}"/>
-                <Entry BackgroundColor="{StaticResource fontColorB}"/>
-
-                <Label Text="Senha" 
-               Style="{StaticResource lbTextos}"/>
-                <Entry IsPassword="True" 
-               BackgroundColor="{StaticResource fontColorB}"/>
+                <Label Text="Login" Style="{StaticResource lbTextos}"/>
+                <Entry x:Name="lbEmail" BackgroundColor="{StaticResource fontColorB}"/>
+                
+                <Label Text="Senha" Style="{StaticResource lbTextos}"/>
+                <Entry IsPassword="True" x:Name="lbSenha" BackgroundColor="{StaticResource fontColorB}"/>
 
             </StackLayout>
 

@@ -24,30 +24,38 @@
             </StackLayout>
 
             <StackLayout Margin="0,32,0,0">
-                <Label Text="Nome" 
-                       Style="{StaticResource lbTextos}"/>
-                <Entry BackgroundColor="{StaticResource fontColorB}" />
+                <Label 
+                    Text="Nome"
+                    Style="{StaticResource lbTextos}"/>
+                
+                <Entry  x:Name="lbNome" BackgroundColor="{StaticResource fontColorB}" />
 
-                <Label Text="E-mail" 
-                       Style="{StaticResource lbTextos}"/>
-                <Entry BackgroundColor="{StaticResource fontColorB}"/>
+                <Label
+                    Text="E-mail"
+                    Style="{StaticResource lbTextos}"/>
 
-                <Label Text="Celular" 
-                       Style="{StaticResource lbTextos}"/>
-                <Entry BackgroundColor="{StaticResource fontColorB}"/>
+                <Entry x:Name="lbEmail" BackgroundColor="{StaticResource fontColorB}"/>
 
-                <Label Text="Senha" 
-                       Style="{StaticResource lbTextos}"/>
-                <Entry IsPassword="True" BackgroundColor="{StaticResource fontColorB}"/>
+                <Label 
+                    Text="Celular" 
+                    Style="{StaticResource lbTextos}"/>
+                
+                <Entry x:Name="lbCelular" BackgroundColor="{StaticResource fontColorB}"/>
+
+                <Label 
+                    Text="Senha" 
+                    Style="{StaticResource lbTextos}"/>
+                
+                <Entry x:Name="lbSenha" IsPassword="True" BackgroundColor="{StaticResource fontColorB}"/>
             </StackLayout>
-            
+
             <StackLayout Margin="0,50,0,0">
                 <Button 
                     Text="Cadastrar" 
                     Style="{StaticResource btnPadrao}" 
                     BackgroundColor="{StaticResource verde}"
                     Clicked="OnClicked_CadastroRealizado"
-                    FontAttributes="Bold"    />
+                    FontAttributes="Bold"/>
             </StackLayout>
         </StackLayout>
     </ContentPage.Content>
