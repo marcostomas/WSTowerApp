@@ -33,16 +33,16 @@ namespace WSTowerApp.Views
 
             if (usuarioBuscado != null)
             {
-                Navigation.PushAsync(new Principal());
+                App.Current.MainPage = new MasterMenu();
             }
             else
             {
                 MessagingCenter.Send<String>("Erro no login", "Sucesso");
             }
         }
-        private void OnClicked_Cadastrar(object sender, EventArgs e)
+        private async void OnClicked_Cadastrar(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Cadastro());
+            await Navigation.PushAsync(new Cadastro());
         }
     }
 }

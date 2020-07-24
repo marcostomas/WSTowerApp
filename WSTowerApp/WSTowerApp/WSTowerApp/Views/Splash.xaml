@@ -4,18 +4,41 @@
              xmlns:d="http://xamarin.com/schemas/2014/forms/design"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d"
-             xmlns:local="clr-namespace:WSTowerApp"
+             xmlns:magic="clr-namespace:MagicGradients;assembly=MagicGradients"
              x:Class="WSTowerApp.Views.Splash">
-    <ContentPage.Content
-        BackgroundColor="#E5E5E5">
-        <StackLayout
-            HorizontalOptions="Center"
-            VerticalOptions="Center">
-            <Image 
-                Source="{local:ImageResource WSTowerApp.Resource.WSTower-logo.png}"
-                WidthRequest="190"
-                HeightRequest="190"
-            />
-        </StackLayout>
-    </ContentPage.Content>
+    <StackLayout>
+        <Grid VerticalOptions="FillAndExpand">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition />
+                <RowDefinition />
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <magic:GradientView x:Name="view"
+                Grid.RowSpan="3">
+                <magic:GradientView.GradientSource>
+                    <magic:LinearGradient Angle="180">
+                        <magic:GradientStop Color="#2FCB71" Offset="0"/>
+                        <magic:GradientStop Color="#2881B9" Offset="1"/>
+                    </magic:LinearGradient>
+                </magic:GradientView.GradientSource>
+            </magic:GradientView>
+            <StackLayout Grid.RowSpan="3" 
+                         HorizontalOptions="CenterAndExpand" 
+                         VerticalOptions="End" 
+                         Margin="0,0,0,10">
+                <Label FontSize="28"
+                       FontFamily="Exo">
+                    <Label.FormattedText>
+                        <FormattedString>
+                            <Span Text="From " TextColor="{StaticResource cinzento}"/>
+                            <Span Text="Ws Tower" TextColor="White"/>
+                        </FormattedString>
+                    </Label.FormattedText>
+                </Label>
+            </StackLayout>
+        </Grid>
+    </StackLayout>
 </ContentPage>

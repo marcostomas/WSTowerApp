@@ -20,8 +20,7 @@ namespace WSTowerApp.Views
 
         private async void Inicializar()
         {
-            await Task.Delay(4000);
-
+            await view.ScaleTo(2, 3000);
             App.Current.MainPage = new NavigationPage(new Login());
         }
     }

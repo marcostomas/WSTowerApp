@@ -41,15 +41,6 @@
                     WidthRequest="139"
                     HeightRequest="36"/>
             </StackLayout>
-
-            <StackLayout Margin="0,48,0,0">
-                <!--Adicionar clicked no botão e, consequentemente, o método em Sobre.xaml.cs-->
-                <Button
-                    Text="Voltar"
-                    Style="{StaticResource btnPadrao}"
-                    BackgroundColor="{StaticResource azul}"
-                    FontAttributes="Bold"/>
-            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

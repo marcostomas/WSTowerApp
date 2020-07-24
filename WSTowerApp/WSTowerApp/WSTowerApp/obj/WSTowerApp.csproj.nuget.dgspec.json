@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {}
+    "C:\\Users\\marcos\\Desktop\\Final\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {}
   },
   "projects": {
-    "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {
+    "C:\\Users\\marcos\\Desktop\\Final\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
+        "projectUniqueName": "C:\\Users\\marcos\\Desktop\\Final\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
         "projectName": "WSTowerApp",
-        "projectPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
+        "projectPath": "C:\\Users\\marcos\\Desktop\\Final\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
         "packagesPath": "C:\\Users\\marcos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\marcos\\Desktop\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\obj\\",
+        "outputPath": "C:\\Users\\marcos\\Desktop\\Final\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Microsoft\\Xamarin\\NuGet\\"
@@ -42,6 +42,10 @@
       "frameworks": {
         "netstandard2.0": {
           "dependencies": {
+            "MagicGradients": {
+              "target": "Package",
+              "version": "[1.1.0, )"
+            },
             "NETStandard.Library": {
               "suppressParent": "All",
               "target": "Package",

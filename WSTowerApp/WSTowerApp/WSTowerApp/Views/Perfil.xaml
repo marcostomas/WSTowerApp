@@ -31,7 +31,7 @@
                     FontSize="26"/>
             </StackLayout>
             
-            <StackLayout Margin="0,32,0,0">
+            <StackLayout Margin="0,16,0,0">
                 <Label Text="Nome" 
                        Style="{StaticResource lbTextos}"/>
                 <Entry BackgroundColor="{StaticResource fontColorB}" />
@@ -45,7 +45,7 @@
                 <Entry BackgroundColor="{StaticResource fontColorB}"/>
             </StackLayout>
 
-            <StackLayout Margin="0,38,0,50">
+            <StackLayout Margin="0,25,0,25">
                 <Button 
                     Text="Meus Eventos"
                     Style ="{StaticResource btnPadrao}"
@@ -53,7 +53,7 @@
                     FontAttributes="bold"
                     BackgroundColor="{StaticResource azul}"/>
 
-                <StackLayout Orientation="Horizontal">
+                <StackLayout Orientation="Horizontal" HorizontalOptions="CenterAndExpand">
 
                     <StackLayout Margin="0,21,30,0">
                         <Button 
@@ -63,7 +63,7 @@
                             BackgroundColor="{StaticResource verde}"/>
                     </StackLayout>
 
-                    <StackLayout Margin="30,21,10,0">
+                    <StackLayout Margin="50,21,0,0">
                         <Button 
                             Text="Excluir"
                             FontAttributes="Bold"

@@ -16,7 +16,5 @@ namespace WSTowerApp.Views
         {
             InitializeComponent();
         }
-
-        //Adicionar o método aqui
     }
 }

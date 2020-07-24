@@ -17,9 +17,10 @@ namespace WSTowerApp.Views
             InitializeComponent();
         }
 
-        private void OnClicked_MeusEventosPerfil(object sender, EventArgs e)
+        private async void OnClicked_MeusEventosPerfil(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Eventos());
+            await Navigation.PopToRootAsync();
+            await App.NavigationMasterDetail(new Eventos());
         }
 
         async void OnClicked_EditarPerfil(object sender, EventArgs e)

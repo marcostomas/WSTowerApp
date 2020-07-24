@@ -14,7 +14,7 @@ namespace WSTowerApp.Views {
     
     
     [global::Xamarin.Forms.Xaml.XamlFilePathAttribute("Views\\MenuPrincipal.xaml")]
-    public partial class MenuPrincipal : global::Xamarin.Forms.MasterDetailPage {
+    public partial class MenuPrincipal : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
