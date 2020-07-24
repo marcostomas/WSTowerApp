@@ -31,7 +31,7 @@ Aplicação mobile para a empresa Ws Tower, o aplicativo tem como principal fun�
 - Testar.
 
 ### Cronograma
-[Veja o cronograma](../README.md "Cronograma do grupo 9 em no README.md")
+[Veja o cronograma](../README.md "Cronograma do grupo 9 em no README.md").
 [Baixe o cronograma](https://github.com/marcostomas/WSTowerApp/raw/telas/Documentos/Cronograma_Grupo-9.xlsx "Cronograma do grupo 9 em .xlsx")
 
 ## Guia de Estilos

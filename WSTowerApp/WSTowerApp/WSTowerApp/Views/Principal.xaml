@@ -39,6 +39,7 @@
 
                 <SearchBar
                     x:Name="buscarEventos"
+                    TextChanged="buscarEventos_TextChanged"
                     WidthRequest="280"/>
 
             </StackLayout>
@@ -65,46 +66,41 @@
                                             </Grid.ColumnDefinitions>
                                             <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="StartAndExpand" Margin="20,0,0,0">
                                                 <Label
-                                                    Grid.ColumnSpan="50"
-                                                    Grid.RowSpan="30"
                                                     Text="{Binding DataHora}"
                                                     FontAttributes="Bold" 
                                                     HorizontalTextAlignment="Start"
-                                                    VerticalTextAlignment="Center"/>
+                                                    VerticalTextAlignment="Center"
+                                                    TextColor="Black"/>
                                             </StackLayout>
 
                                             <StackLayout Orientation="Horizontal" VerticalOptions="Start" HorizontalOptions="Start" Margin="20,15,0,0">
                                                 <Label
-                                                    Grid.ColumnSpan="70"
-                                                    Grid.RowSpan="50"
                                                     Text="{Binding NomeEvento}"
                                                     FontAttributes="Bold"
-                                                    HorizontalTextAlignment="Center"/>
+                                                    HorizontalTextAlignment="Center"
+                                                    TextColor="Black"/>
                                             </StackLayout>
 
                                             <StackLayout Orientation="Horizontal" VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Margin="20,10,0,0">
                                                 <Label
                                                     Text="{Binding NomeEstadio}"
-                                                    FontAttributes="Bold" />
+                                                    Grid.Row="2"
+                                                    FontAttributes="Bold"
+                                                    TextColor="Black"/>
                                             </StackLayout>
 
                                             <StackLayout Orientation="Horizontal" VerticalOptions="Center" HorizontalOptions="StartAndExpand" Margin="20,70,0,0">
                                                 <Label 
-                                                    Grid.ColumnSpan="70"
-                                                    Grid.RowSpan="90"
-                                                    Text="{Binding NomeTipoParticipacao}"/>
+                                                    Text="{Binding NomeTipoParticipacao}"
+                                                    TextColor="{StaticResource azul}"/>
 
-                                                <Label 
-                                                    Grid.ColumnSpan="80"
-                                                    Grid.RowSpan="110"
+                                                <Label
                                                     Text="{Binding NomeTipoEvento}"
-                                                    TextColor="{StaticResource fontColorA}"/>
+                                                    TextColor="{StaticResource verde}"/>
                                             </StackLayout>
 
-                                            <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="End">
-                                                <Label Grid.RowSpan="90"
-                                                    Grid.ColumnSpan="130"
-                                                    Text="{Binding Favorito}"/>
+                                            <StackLayout Orientation="Horizontal" VerticalOptions="End" HorizontalOptions="End" Margin="30,0,0,0">
+                                                <Label Text="{Binding Favorito}"/>
                                             </StackLayout>
                                         </Grid>
                                     </ViewCell>

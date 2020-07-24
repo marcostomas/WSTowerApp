@@ -16,13 +16,6 @@ namespace WSTowerApp.Models
         public string NomeEvento { get; set; }
 
         public bool AcessoLivre { get; set; }
-        public bool Favorito { get; set; }
-
-        //public override string ToString()
-        //{
-        //    return NomeEvento;
-        //}
+        public string Favorito { get; set; }
     }
-
-   
 }
