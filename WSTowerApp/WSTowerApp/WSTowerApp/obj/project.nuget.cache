@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "P1sg+iNSdYGpu9D+CC3bs2+QgGlcunmYBOjGH+qqMmVd0N4A5tzRlD0kPpDYVZ3KR3wtaK5dB70o3bl3QMs5gA==",
+  "dgSpecHash": "kkmio5HowDiBeWjydnI+moDtNrb8R61kcTRjPZ4wlNdWud2Uwev4pNoSBdGHqhDf+FrSOjfu43xfcp031fp3cw==",
   "success": true,
   "projectFilePath": "C:\\Users\\marcos\\Desktop\\Final\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\marcos\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\3.1.2\\com.airbnb.xamarin.forms.lottie.3.1.2.nupkg.sha512",
     "C:\\Users\\marcos\\.nuget\\packages\\magicgradients\\1.1.0\\magicgradients.1.1.0.nupkg.sha512",
     "C:\\Users\\marcos\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
     "C:\\Users\\marcos\\.nuget\\packages\\microsoft.netcore.targets\\1.1.0\\microsoft.netcore.targets.1.1.0.nupkg.sha512",

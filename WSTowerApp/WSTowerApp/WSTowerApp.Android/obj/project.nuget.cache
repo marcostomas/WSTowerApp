@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "rNr7bJpvukQfXMkqlK8SoTSRDkN+qDFzYhY4Guc6e2xiD//Og5l8Vzj/qi1Ep5glm3hOkZXCd6bvawxu1j3Lhw==",
+  "dgSpecHash": "5JD1XCzhlulQQy42U8/3YrpdBdJ25+Vwk0Dklv92sWcVnEOPCZ6gQwkBsQUvph6vZ9W1OKCPP9zkMRDBvum15A==",
   "success": true,
   "projectFilePath": "C:\\Users\\marcos\\Desktop\\Final\\WSTowerApp\\WSTowerApp\\WSTowerApp\\WSTowerApp.Android\\WSTowerApp.Android.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\marcos\\.nuget\\packages\\com.airbnb.xamarin.forms.lottie\\3.1.2\\com.airbnb.xamarin.forms.lottie.3.1.2.nupkg.sha512",
     "C:\\Users\\marcos\\.nuget\\packages\\magicgradients\\1.1.0\\magicgradients.1.1.0.nupkg.sha512",
     "C:\\Users\\marcos\\.nuget\\packages\\skiasharp\\1.68.1.1\\skiasharp.1.68.1.1.nupkg.sha512",
     "C:\\Users\\marcos\\.nuget\\packages\\skiasharp.views\\1.68.1.1\\skiasharp.views.1.68.1.1.nupkg.sha512",

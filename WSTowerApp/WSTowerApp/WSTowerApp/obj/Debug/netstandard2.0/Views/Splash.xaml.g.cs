@@ -17,12 +17,8 @@ namespace WSTowerApp.Views {
     public partial class Splash : global::Xamarin.Forms.ContentPage {
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::MagicGradients.GradientView view;
-        
-        [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private void InitializeComponent() {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(Splash));
-            view = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::MagicGradients.GradientView>(this, "view");
         }
     }
 }

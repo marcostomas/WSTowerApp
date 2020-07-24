@@ -11,8 +11,12 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Resource\9914-loading-success-fail-spinner-stroke-update.mp4" />
     <None Remove="Resource\agenda.png" />
     <None Remove="Resource\agenda3.jpg" />
+    <None Remove="Resource\animacao.gif" />
+    <None Remove="Resource\animacao.mp4" />
+    <None Remove="Resource\animacaovideo.mp4" />
     <None Remove="Resource\bonecoTemporario.png" />
     <None Remove="Resource\calendario.jpg" />
     <None Remove="Resource\carinhaTriste.png" />
@@ -25,6 +29,18 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Content Include="Resource\animacaovideo.mp4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\animacao.mp4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="Resource\animacao.gif" />
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Include="Resource\agenda3.jpg" />
     <EmbeddedResource Include="Resource\carinhaTriste.png" />
     <EmbeddedResource Include="Resource\user.png" />
@@ -34,9 +50,14 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="Com.Airbnb.Xamarin.Forms.Lottie" Version="3.1.2" />
     <PackageReference Include="MagicGradients" Version="1.1.0" />
     <PackageReference Include="Xamarin.Forms" Version="4.5.0.495" />
     <PackageReference Include="Xamarin.Essentials" Version="1.3.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resource\9914-loading-success-fail-spinner-stroke-update.mp4" />
   </ItemGroup>
 
   <ItemGroup>

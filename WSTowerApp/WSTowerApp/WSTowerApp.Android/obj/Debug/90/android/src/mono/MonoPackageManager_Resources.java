@@ -4,6 +4,7 @@ public class MonoPackageManager_Resources {
 		/* We need to ensure that "WSTowerApp.Android.dll" comes first in this list. */
 		"WSTowerApp.Android.dll",
 		"FormsViewGroup.dll",
+		"Lottie.Forms.dll",
 		"MagicGradients.dll",
 		"SkiaSharp.dll",
 		"SkiaSharp.Views.Android.dll",
