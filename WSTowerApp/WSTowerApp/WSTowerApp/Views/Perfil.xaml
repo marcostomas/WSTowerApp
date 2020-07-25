@@ -30,7 +30,7 @@
                         Style="{StaticResource lbTextos}"
                         FontSize="26"/>
                 </StackLayout>
-                
+
                 <StackLayout Margin="0,16,0,0">
                     <Label Text="Nome" 
                            Style="{StaticResource lbTextos}"/>
@@ -67,12 +67,12 @@
                             <Button 
                                 Text="Excluir"
                                 FontAttributes="Bold"
-                                BackgroundColor="{StaticResource verde}"/>
+                                BackgroundColor="{StaticResource verde}"
+                                Clicked="OnClicked_DeletarPerfil"/>
                         </StackLayout>
 
                     </StackLayout>
                 </StackLayout>
-                
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

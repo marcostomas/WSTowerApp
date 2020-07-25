@@ -17,6 +17,7 @@ namespace WSTowerApp.ViewModels
 
         public LoginViewModel()
         {
+           
             Perfil();
             BuscarUsuarioLogado();
             ControlarSesseion();

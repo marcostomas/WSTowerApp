@@ -21,7 +21,7 @@
                 <StackLayout Margin="0,80,0,0">
                     <Label Text="Login" Style="{StaticResource lbTextos}"/>
                     <Entry x:Name="lbEmail" BackgroundColor="{StaticResource fontColorB}"/>
-                    
+
                     <Label Text="Senha" Style="{StaticResource lbTextos}"/>
                     <Entry IsPassword="True" x:Name="lbSenha" BackgroundColor="{StaticResource fontColorB}"/>
                 </StackLayout>
@@ -47,7 +47,7 @@
                         BackgroundColor="{StaticResource verde}"
                         Clicked="OnClicked_Cadastrar"/>
                 </StackLayout>
-            
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

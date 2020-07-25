@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using WSTowerApp.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -12,6 +12,7 @@ namespace WSTowerApp.Views
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MenuPrincipal : ContentPage
     {
+        LoginViewModel lvm = new LoginViewModel();
         public MenuPrincipal()
         {
             InitializeComponent();
@@ -38,6 +39,7 @@ namespace WSTowerApp.Views
 
             if (result == "Ok")
             {
+                lvm.RemoveSESSION();
                 App.Current.MainPage = new NavigationPage(new Login());
             }
         }

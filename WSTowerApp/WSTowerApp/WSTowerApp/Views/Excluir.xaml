@@ -7,6 +7,7 @@
              xmlns:local="clr-namespace:WSTowerApp"
              x:Class="WSTowerApp.Views.Excluir">
     <ContentPage.Content>
+        <ScrollView>
         <StackLayout Margin="45,0,45,0">
 
             <StackLayout>
@@ -47,7 +48,8 @@
                         <Button 
                             Text="Sim" 
                             FontAttributes="Bold"
-                            BackgroundColor="{StaticResource verde}"/>
+                            BackgroundColor="{StaticResource verde}"
+                            Clicked="OnClicked_Deletar"/>
                     </StackLayout>
 
                     <StackLayout Margin="34,0,0,0">
@@ -61,5 +63,6 @@
             </StackLayout>
 
         </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>
