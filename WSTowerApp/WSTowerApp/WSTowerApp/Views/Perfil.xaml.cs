@@ -28,7 +28,7 @@ namespace WSTowerApp.Views
 
         async void OnClicked_EditarPerfil(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new EditarPerfil());
+            await Navigation.PushAsync(new Alterar());
         }
 
         private void OnClicked_DeletarPerfil(object sender, EventArgs e)

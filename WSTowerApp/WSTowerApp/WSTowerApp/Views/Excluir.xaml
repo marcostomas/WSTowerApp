@@ -56,7 +56,8 @@
                         <Button 
                             Text="Não"
                             FontAttributes="Bold"
-                            BackgroundColor="{StaticResource verde}"/>
+                            BackgroundColor="{StaticResource verde}"
+                            Clicked="OnClicked_Nao"/>
                     </StackLayout>
 
                 </StackLayout>

@@ -80,7 +80,6 @@ C:\Users\senai\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\net
 C:\Users\senai\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\App.xaml.g.cs
 C:\Users\senai\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\Alterar.xaml.g.cs
 C:\Users\senai\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\Cadastro.xaml.g.cs
-C:\Users\senai\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\EditarPerfil.xaml.g.cs
 C:\Users\senai\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\Eventos.xaml.g.cs
 C:\Users\senai\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\Excluir.xaml.g.cs
 C:\Users\senai\Desktop\WSTowerApp\WSTowerApp\WSTowerApp\WSTowerApp\obj\Debug\netstandard2.0\Views\Login.xaml.g.cs

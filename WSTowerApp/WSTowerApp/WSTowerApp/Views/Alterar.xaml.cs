@@ -19,7 +19,7 @@ namespace WSTowerApp.Views
             InitializeComponent();
         }
 
-        private void OnClicked_Editar(object sender, EventArgs e)
+        async void OnClicked_Editar(object sender, EventArgs e)
         {
             try
             {
@@ -29,20 +29,27 @@ namespace WSTowerApp.Views
                 usuario.Nome = lbNome.Text;
                 usuario.Telefone = lbTelefone.Text;
 
-                if (lvm.Atualizar(usuario))
+                if (lvm.BuscarCadastro(usuario))
                 {
-                    DisplayAlert("", "Usuario atualizado com sucesso", "Fechar");
-                    lvm.RemoveSESSION();
-                    Navigation.PushAsync(new Login());
+                    if (lvm.Atualizar(usuario))
+                    {
+                        await DisplayAlert("", "Usuario atualizado com sucesso.Os campos preenchidos com menos de 4 caracteres não foram alterados", "Fechar");
+                        lvm.RemoveSESSION();
+                        await Navigation.PushAsync(new Login());
+                    }
+                    else
+                    {
+                        await DisplayAlert("", "Nao foi possivel atualizar", "Fechar");
+                    }
                 }
                 else
                 {
-                    DisplayAlert("", "Nao foi possivel atualizar", "Fechar");
-                }
+                    await DisplayAlert("", "Esse email ja foi cadastrado", "Fechar");
+                } 
             }
             catch (Exception ex)
             {
-                DisplayAlert("", "Erro no sistema", "Fechar");
+                await DisplayAlert("", "Erro no sistema", "Fechar");
             }
         }
     }

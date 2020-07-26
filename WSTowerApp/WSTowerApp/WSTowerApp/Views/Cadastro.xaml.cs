@@ -21,11 +21,10 @@ namespace WSTowerApp.Views
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void OnClicked_CadastroRealizado(object sender, EventArgs e)
+        async void OnClicked_CadastroRealizado(object sender, EventArgs e)
         {
             try
             {
-                Navigation.RemovePage(this);
 
                 Usuario usuarioNovo = new Usuario();
 
@@ -37,22 +36,44 @@ namespace WSTowerApp.Views
 
                 usuarioNovo.Telefone = lbCelular.Text;
 
-                if (lvm.Cadastrar(usuarioNovo))
+                if (usuarioNovo.Email.Length < 4)
                 {
-                    MessagingCenter.Send<String>("Cadastro foi um Sucesso", "Sucesso");
+                    await DisplayAlert("", "O campo Email deve conter no minimo 4 caracteres", "Fechar");
+                }
+                if (usuarioNovo.Nome.Length < 4)
+                {
+                    await DisplayAlert(""," O campo Nome deve conter no minimo 4 caracteres", "Fechar");
+                }
+                if (usuarioNovo.Senha.Length < 4)
+                {
+                    await DisplayAlert("", "O campo Senha deve conter no minimo 4 caracteres", "Fechar");
+                }
+                if (usuarioNovo.Telefone.Length < 4)
+                {
+                    await DisplayAlert("", "O campo Telefone deve conter no minimo 4 caracteres", "Fechar");
+                }
+
+                if (lvm.BuscarCadastro(usuarioNovo))
+                {
+                    if (lvm.Cadastrar(usuarioNovo))
+                    {
+                        await DisplayAlert("", "O cadastro foi um sucesso", "Fechar");
+                        Navigation.RemovePage(this);
+                    }
+                    else
+                    {
+                        await DisplayAlert("", "Preencha todos os campos", "Fechar");
+                    }
                 }
                 else
                 {
-                    MessagingCenter.Send<String>("Erro no Cadastro tente novamente", "ErroCadastro");
-                    Navigation.PushAsync(new Login());
-                }
-
+                    await DisplayAlert("", "Esse email ja foi cadastardo", "Fechar");
+                }       
             }
             catch (Exception ex)
             {
-                MessagingCenter.Send<String>("Erro No sistema", "Erro");
+                await DisplayAlert("", "preencha todos os campos", "Fechar");
             }
-
         }
     }
 }

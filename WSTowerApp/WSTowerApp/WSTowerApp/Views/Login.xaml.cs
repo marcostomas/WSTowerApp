@@ -21,7 +21,7 @@ namespace WSTowerApp.Views
             NavigationPage.SetHasNavigationBar(this, false);
         }
 
-        private void OnClicked_Entrar(object sender, EventArgs e)
+        async void OnClicked_Entrar(object sender, EventArgs e)
         {
             LoginClass login = new LoginClass();
 
@@ -37,7 +37,7 @@ namespace WSTowerApp.Views
             }
             else
             {
-                MessagingCenter.Send<String>("Erro no login", "Sucesso");
+                await DisplayAlert("", "Email ou senha invalidos", "Fechar");
             }
         }
         private async void OnClicked_Cadastrar(object sender, EventArgs e)

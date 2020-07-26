@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 using WSTowerApp.Models;
 
@@ -23,16 +24,56 @@ namespace WSTowerApp.ViewModels
             ControlarSesseion();
         }
 
+
+        public bool BuscarCadastro(Usuario usuarioNovo)
+        {
+            try
+            {
+                Usuario usuarioBuscado = usuarios.FirstOrDefault(u => u.Email == usuarioNovo.Email);
+
+                if (usuarioBuscado == null)
+                {
+                    return true;
+                }
+                else
+                {
+                    return false;
+                }
+            }catch(Exception ex)
+            {
+                return false;
+            }
+            
+        }
         public bool Cadastrar(Usuario usuario)
         {
             if (usuario.Email == null || usuario.Senha == null || usuario.Nome == null || usuario.Telefone == null)
             {
                 return false;
             }
+
+            if (usuario.Email.Length < 4)
+            {
+                return false;
+            }
+
+            if (usuario.Nome.Length < 4)
+            {
+                return false;
+            }
+
+            if (usuario.Senha.Length < 4)
+            {
+                return false;
+            }
+
+            if (usuario.Telefone.Length < 4)
+            {
+                return false;
+            }
             usuario.id = Contador;
             usuarios.Add(usuario);
             Contador++;
-
             return true;
         }
 
@@ -102,7 +143,7 @@ namespace WSTowerApp.ViewModels
             {
                 Usuario usuarioBuscado = usuarios.Find(u => u == UsuarioLogado[0]);
 
-                if (UsuariAtualizado.Email != null)
+                if (UsuariAtualizado.Email != null&&UsuariAtualizado.Email.Length>=4)
                 {
                     UsuarioLogado[0].Email = UsuariAtualizado.Email;
 
@@ -111,7 +152,7 @@ namespace WSTowerApp.ViewModels
                     LogSESSEION[0].Email = UsuariAtualizado.Email;
                 }
 
-                if (UsuariAtualizado.Nome != null)
+                if (UsuariAtualizado.Nome != null && UsuariAtualizado.Nome.Length >= 4)
                 {
                     UsuarioLogado[0].Nome = UsuariAtualizado.Nome;
 
@@ -120,7 +161,7 @@ namespace WSTowerApp.ViewModels
                     LogSESSEION[0].Nome = UsuariAtualizado.Nome;
                 }
 
-                if (UsuariAtualizado.Telefone != null)
+                if (UsuariAtualizado.Telefone != null && UsuariAtualizado.Telefone.Length >= 4)
                 {
                     UsuarioLogado[0].Telefone = UsuariAtualizado.Telefone;
 

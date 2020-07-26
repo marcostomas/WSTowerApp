@@ -31,19 +31,30 @@
                         FontSize="26"/>
                 </StackLayout>
 
-                <StackLayout Margin="0,16,0,0">
-                    <Label Text="Nome" 
-                           Style="{StaticResource lbTextos}"/>
-                    <Entry BackgroundColor="{StaticResource fontColorB}" />
+            <ListView
+            x:Name="PerfilList"
+            ItemsSource="{Binding LogSESSEION}"
+            HasUnevenRows="True">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Margin="0,16,0,0">
+                                    <Label Text="Nome" 
+                       Style="{StaticResource lbTextos}"/>
+                                    <Entry Text="{Binding Nome}" BackgroundColor="{StaticResource fontColorB}" />
 
-                    <Label Text="E-mail" 
-                           Style="{StaticResource lbTextos}"/>
-                    <Entry BackgroundColor="{StaticResource fontColorB}"/>
+                                    <Label Text="Email"
+                       Style="{StaticResource lbTextos}"/>
+                                    <Entry Text="{Binding Email}"  BackgroundColor="{StaticResource fontColorB}" />
 
-                    <Label Text="Celular" 
-                           Style="{StaticResource lbTextos}"/>
-                    <Entry BackgroundColor="{StaticResource fontColorB}"/>
-                </StackLayout>
+                                    <Label  Text="Telefone"
+                       Style="{StaticResource lbTextos}"/>
+                                    <Entry Text="{Binding Telefone}" BackgroundColor="{StaticResource fontColorB}" />
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
 
                 <StackLayout Margin="0,25,0,25">
                     <Button 

@@ -46,5 +46,10 @@ namespace WSTowerApp.Views
             }
 
         }
+
+        private void OnClicked_Nao(object sender, EventArgs e)
+        {
+            Navigation.RemovePage(this);
+        }
     }
 }
